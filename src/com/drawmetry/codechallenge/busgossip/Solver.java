@@ -52,7 +52,7 @@ public class Solver {
         for (int i = 0; i < busses.length; i++) {
             for (int j = i + 1; j < busses.length; j++) {
                 if (busses[i].getBusStop().equals(busses[j].getBusStop())) {
-                    busses[i].exchangeGossip(busses[j], false);
+                    busses[i].exchangeGossip(busses[j]);
                 }
             }
             completed = completed && busses[i].getCompleted();
